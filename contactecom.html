@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contactcss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1>Rudra</h1>
+        <div class="navbar-links">
+            <p class="side-navbar-link"><a href="ecommfinal.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">collections</a></p>
+            <p class="side-navbar-link"><a href="contactecom.html">contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!--sidenavbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="ecommfinal.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">collections</a></p>
+            <p class="side-navbar-link"><a href="contactecom.html">contact</a></p>
+        </div>
+    </div> 
+    <h1 style="text-align: center; color: rgb(0, 123, 255);">Contact Us</h1>
+<div class="container-wrapper">
+    <div class="container">
+        <form action="php.php" method="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="fname" placeholder="Enter name" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pno">Phone number</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="pno" name="pno" placeholder="Enter phone no">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="em">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="em" name="em" placeholder="Enter email" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Queries</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write your queries.."></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-75">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--footer-->
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="headingtext">Rudra</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Commodi optio ut odio laboriosam consequuntur.</p>
+            <div class="footer-icon">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </div>
+    <p>@ 2024 Rudra.com</p>
+</div>
+    <script src="collectionjs.js"></script>
+</body>
+  
+</html>
